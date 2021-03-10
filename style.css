@@ -1,0 +1,153 @@
+html {
+  height: 200%;
+  height: auto;
+  
+}
+body {
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  
+}
+nav {
+  box-shadow: 0 0 10px 5px rgb(56, 51, 61);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer-container {
+  box-shadow: 0 0 10px 5px rgb(56, 51, 61);
+  background-color: #212329;
+  padding: 2rem 0 4rem 0;
+  top: 100%;
+  margin-top: auto;
+  position: sticky;
+}
+.footer {
+  padding: bottom 0;
+  width: 50%;
+  height: 20vh;
+  height: auto;
+  margin-bottom: 0;
+
+  background-color: #212329;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: auto;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+.footer-heading h2 {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.footer-heading a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.slider{
+  display: block;
+  margin-top: 5rem;
+  background: none;
+
+  width: 800px;
+  height: 500px;
+  
+  
+  overflow: hidden;
+  align-items: center;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slides{
+  
+  width: 700%;
+  height: 500px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+}
+.slides input{
+  display: none;
+}
+.slide{
+  
+  width: 20%;
+  transition: 2s;
+
+}
+.slide img{
+  display:flex
+} 
+.navigation-man{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.man-btn{
+  border: 3px solid black;
+  
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  
+}
+.man-btn:not(:last-child){
+  margin-right: 40px;
+}
+.man-btn:hover{
+  background: black;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+  
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+.itemshop{
+  display: inline;
+  display: flex;
+  background-color: grey;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  position: sticky;
+  
+}
+.card{
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  align-items: center;
+  align-self: center;
+  
+  flex-direction: column;
+  display: flex;
+  box-shadow: 0 0 10px 5px rgb(56, 51, 61);
+  
+  
+}

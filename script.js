@@ -4,4 +4,4 @@ window.addEventListener("load", function(){
 
 
 })
-a=5;
+

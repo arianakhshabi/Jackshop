@@ -1,13 +1,11 @@
 html {
   height: 200%;
   height: auto;
-  
 }
 body {
   min-height: 100%;
   align-items: center;
   justify-content: center;
-  
 }
 nav {
   box-shadow: 0 0 10px 5px rgb(56, 51, 61);
@@ -57,86 +55,80 @@ nav {
   margin-bottom: 0.5rem;
 }
 
-.slider{
+.slider {
   display: block;
   margin-top: 5rem;
   background: none;
-
+  /* border-radius: 10px; */
   width: 800px;
   height: 500px;
-  
-  
+
+  /* box-shadow: 0 0 10px 5px rgb(56, 51, 61); */
   overflow: hidden;
   align-items: center;
   align-self: center;
   margin-left: auto;
   margin-right: auto;
 }
-.slides{
-  
+.slides {
   width: 700%;
   height: 500px;
   display: flex;
   align-self: center;
   align-items: center;
 }
-.slides input{
+.slides input {
   display: none;
 }
-.slide{
-  
+.slide {
   width: 20%;
   transition: 2s;
-
 }
-.slide img{
-  display:flex
-} 
-.navigation-man{
+.slide img {
+  display: flex;
+}
+.navigation-man {
   position: absolute;
   width: 800px;
   margin-top: -40px;
   display: flex;
   justify-content: center;
 }
-.man-btn{
+.man-btn {
   border: 3px solid black;
-  
+
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
-  
 }
-.man-btn:not(:last-child){
+.man-btn:not(:last-child) {
   margin-right: 40px;
 }
-.man-btn:hover{
+.man-btn:hover {
   background: black;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked ~ .first {
   margin-left: 0;
 }
 
-#radio2:checked ~ .first{
+#radio2:checked ~ .first {
   margin-left: -20%;
-  
 }
 
-#radio3:checked ~ .first{
+#radio3:checked ~ .first {
   margin-left: -40%;
 }
-.itemshop{
+.itemshop {
   display: inline;
   display: flex;
   background-color: grey;
   border-radius: 10px;
   margin-bottom: 2rem;
   position: sticky;
-  
 }
-.card{
+.card {
   display: flex;
   margin: auto;
   margin-top: 2rem;
@@ -144,10 +136,32 @@ nav {
   overflow: hidden;
   align-items: center;
   align-self: center;
-  
+
   flex-direction: column;
   display: flex;
   box-shadow: 0 0 10px 5px rgb(56, 51, 61);
-  
+}
+
+.loader{
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgb(241, 241, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader.hidden{
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
   
 }
